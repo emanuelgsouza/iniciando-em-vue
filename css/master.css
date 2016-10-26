@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #00AF2C;
+}
+
+a:hover { text-decoration: underline; }
+
+body {
+  font-size: 62.5%;
+  font-family: 'Proza Libre', sans-serif;
+  background-color: #00738C;
+}
+
+.txt-bold { font-weight: bold; }
+
+div.interface {
+  width: 50%;
+  margin: 2% auto;
+  padding: 2em;
+  border: 1px solid #228A98;
+  background-color: #FFF;
+  box-shadow: 2px 2px 4px #228A98;
+}
+
+div.app {
+  width: 100%;
+  border-top: 2px solid #228A98;
+}
+
+img { max-width: 100%; }
+
+figure {
+  display: block;
+  width: 20%;
+  margin: 0 auto;
+}
+
+h1, h3, p, input { margin: .5em 0; }
+
+h1 { font-size: 3em; text-align: center;}
+
+h3 { font-size: 1.8em; }
+
+p { font-size: 1.8em; }

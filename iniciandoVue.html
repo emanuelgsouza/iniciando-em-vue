@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Iniciando em Vue.js </title>
+    <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+  </head>
+  <body>
+    <div class="interface">
+      <figure>
+        <img src="img/logo.png" />
+      </figure>
+
+      <h1> Iniciando em Vue.js por <a href="http://www.emanuelgdev.com.br" target="blank">EmanuelG</a> </h1>
+      <h2>  </h2>
+
+      <p> Leia o artigo sobre o two-way data binding no <a href="#" target="blank" class="txt-bold"> Medium </a> </p>
+
+      <div class="app">
+        <h3> Two-way data binding com JavaScript puro </h3>
+        <input type="text" id="input" onkeyup="entrandoComDados(this.value)" placeholder="Digite alguma coisa" autofocus>
+        <p id="saida"> O texto que escreveste é esse? </p>
+      </div>
+
+      <div id="app" class="app">
+        <h3> Two-way data binding com Vue.js </h3>
+        <input type="text" v-model="input" placeholder="Digite alguma coisa">
+        <p> O texto que escreveste é esse? {{ input }} </p>
+      </div>
+    </div>
+    <script src="js/vue.min.js"></script>
+    <script src="js/iniciandoVue.js"></script>
+  </body>
+</html>

@@ -4,28 +4,45 @@
     <meta charset="utf-8">
     <title> Iniciando em Vue.js - Two-way data binding </title>
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/master.css">
   </head>
-  <body>
+  <body class="bg-secondary">
     <div class="interface">
-      <figure>
-        <img src="img/logo.png" />
-      </figure>
+      <div class="columns is-centered">
+        <div class="column is-full-tablet is-full-mobile is-full-desktop">
+          <div class="page-content">
+            <div class="columns is-centered">
+              <figure>
+                <img src="img/logo.png" />
+              </figure>
+            </div>
 
-      <h1> Iniciando em Vue.js por <a href="http://www.emanuelgdev.com.br" target="blank">EmanuelG</a> </h1>
+            <header class="header">
+              <h1 class="txt-size-5 txt-invert is-text-centered"> Iniciando em Vue.js por <a href="http://www.emanuelgdev.com.br" target="blank" class="txt-invert">EmanuelG</a> </h1>
+            </header>
 
-      <p> Leia o artigo sobre o two-way data binding no <a href="https://medium.com/@Emanuel_G/come%C3%A7ando-em-vue-js-o-two-way-data-binding-32d26aea8aa8#.d0s5lt3ky" target="blank" class="txt-bold"> Medium </a> </p>
+            <section class="section">
+              <p class="txt-size-2 txt-invert"> Leia o artigo sobre o two-way data binding no <a href="https://medium.com/@Emanuel_G/come%C3%A7ando-em-vue-js-o-two-way-data-binding-32d26aea8aa8#.d0s5lt3ky" target="blank" class="is-text-bold txt-invert"> Medium </a> </p>
 
-      <div class="app">
-        <h3> Two-way data binding com JavaScript puro </h3>
-        <input type="text" id="input" onkeyup="entrandoComDados(this.value)" placeholder="Digite alguma coisa" autofocus>
-        <p id="saida"> O texto que escreveste é esse? </p>
-      </div>
-
-      <div id="app" class="app">
-        <h3> Two-way data binding com Vue.js </h3>
-        <input type="text" v-model="input" placeholder="Digite alguma coisa">
-        <p> O texto que escreveste é esse? {{ input }} </p>
+              <div class="app">
+                <h3 class="txt-invert txt-size-3 is-text-bold"> Two-way data binding com JavaScript puro </h3>
+                <p class="control">
+                  <input type="text" id="input" onkeyup="entrandoComDados(this.value)" placeholder="Digite alguma coisa" autofocus class="textfield">
+                </p>
+                <p id="saida" class="txt-size-2 txt-invert"> O texto que escreveste é esse? </p>
+              </div>
+              <hr>
+              <div id="app" class="app">
+                <h3 class="txt-invert txt-size-3 is-text-bold"> Two-way data binding com Vue.js </h3>
+                <p class="control">
+                  <input type="text" v-model="input" placeholder="Digite alguma coisa" class="textfield">
+                </p>
+                <p class="txt-size-2 txt-invert"> O texto que escreveste é esse? <span class="txt-input">{{ input }}</span> </p>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
     </div>
     <script src="js/vue.min.js"></script>
